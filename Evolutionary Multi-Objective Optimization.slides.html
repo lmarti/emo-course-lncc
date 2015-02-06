@@ -1850,13 +1850,12 @@ taken from <a href="http://xkcd.com/388/">http://xkcd.com/388/</a></div>
 \renewcommand{\vec}[1]{\mathbf{#1}}
 \newcommand{\set}[1]{\mathcal{#1}}
 \newcommand{\dom}{\preccurlyeq}
-\left.
 \begin{array}{rl}
 \mathrm{minimize}             &amp; \vec{F}(\vec{x})=\langle f_1(\vec{x}),\ldots,f_M(\vec{x})\rangle\,,\\ 
 \mathrm{subject}\ \mathrm{to} &amp; c_1(\vec{x}),\ldots,c_C(\vec{x})\le 0\,,\\
 							  &amp; d_1(\vec{x}),\ldots,d_D(\vec{x})= 0\,,\\
 &amp; \text{with}\ \vec{x}\in\set{D}\,,
-\end{array}\right\}
+\end{array}
 $$</p>
 <ul>
 <li>$\mathcal{D}$ is known as the <em>decision set</em> or <em>search set</em>.</li>
@@ -3528,19 +3527,18 @@ AAAAAElFTkSuQmCC
 <h2 id="preference-based-alternatives">Preference-based alternatives</h2>
 <ul>
 <li>A <em>Decision Maker</em> can define a set of weights $w_1,\ldots,w_M$ for $f_1(),\ldots,f_M()$.</li>
-<li><p>We can convert a MOP into a SOP:
-$$
-\left.
-\begin{array}{rl}
+<li>We can convert a MOP into a SOP:</li>
+</ul>
+<p>$$</p>
+<p>\begin{array}{rl}
 \mathrm{minimize}             &amp; F(\vec{x})= w_1f_1(\vec{x})+\cdots + w_if_i(\vec{x}) +\cdots +w_Mf_M(\vec{x})\,,\\ 
 \mathrm{subject}\ \mathrm{to} &amp; c_1(\vec{x}),\ldots,c_C(\vec{x})\le 0\,,\\
 							  &amp; d_1(\vec{x}),\ldots,d_D(\vec{x})= 0\,,\\
 &amp; \text{with}\ \vec{x}\in\set{D}\,,
-\end{array}\right\}
+\end{array}
 $$</p>
-</li>
-<li><p>A single-objective optimizer $\implies$ only one solution not the complete PF.</p>
-</li>
+<ul>
+<li>A single-objective optimizer $\implies$ only one solution not the complete PF.</li>
 <li>&quot;Classical&quot; (mathematicas programming) approaches use this method.</li>
 <li>Requires (a lot) of <em>a priori</em> knowledge.</li>
 <li>Relatively simple.</li>
